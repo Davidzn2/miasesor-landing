@@ -1,0 +1,19 @@
+@import "colors.scss";
+
+.button{
+    border-radius: 25px;
+    width: 242px;
+    height: 40px;
+    border:0;
+    &--blue{
+        background-color: $ACCENT-BLUE;
+        color:white;
+        font-weight: Bold;
+
+    }
+    &--white{
+        background-color: white;
+        color: $BASE-BLUE;
+        font-weight: Bold;
+    }
+}
