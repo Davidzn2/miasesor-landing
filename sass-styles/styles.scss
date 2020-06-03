@@ -1,10 +1,13 @@
 @import "buttons.scss";
 @import "colors.scss";
 @import "fonts.scss";
+@import "breakpoint.scss";
 .header {
-  background-color: $BASE-BLUE;
+  background: transparent linear-gradient(103deg, #3772ff 0%, #1c3980 100%) 0%
+    0% no-repeat padding-box;
   height: 50px;
   margin: 0;
+  box-shadow: none;
   &--logo {
     width: 250px;
     float: left;
@@ -13,7 +16,7 @@
   ul {
     float: right;
   }
-  li {
+  li, a{
     margin: 10px 20px;
     list-style-type: none;
     display: inline-block;
@@ -21,21 +24,31 @@
   }
 }
 .welcome {
-  background-color: $BASE-BLUE;
+  background: transparent linear-gradient(103deg, #3772ff 0%, #1c3980 100%) 0%
+    0% no-repeat padding-box;
+
   color: white;
-  height: 500px;
+  height: 550px;
   font-family: "Montserrat", sans-serif;
   &--title {
-    padding: 120px 0 0 0;
+    padding: 80px 0 0 0;
     font-weight: 700;
   }
   &--subtitle {
     margin: 40px 250px;
   }
+  @media (max-width: $breakpoint-tablet) {
+    &--subtitle {
+      margin: 0;
+    }
+  }
   &--buttons {
     &--down {
       margin: 30px 0;
     }
+  }
+  &--button {
+    margin: 18px 18px 0px 18px;
   }
 }
 .not-alone {
@@ -44,6 +57,47 @@
   &--title {
     color: $BASE-BLUE;
     font-weight: 700;
+  }
+}
+.pricing {
+  text-align: center;
+  &--title {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #22469e;
+  }
+  .card {
+    width: 400px;
+    height: 150px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #00000029;
+    border-radius: 25px;
+    padding: 21px;
+    margin: auto;
+    &--subtitle {
+      text-align: left;
+      font-weight: 400;
+      letter-spacing: 0px;
+      color: #181515;
+      font-size: 22px;
+    }
+    &--text {
+      text-align: right;
+      font-weight: 700;
+      letter-spacing: 0px;
+      color: #3772ff;
+      opacity: 1;
+    }
+  }
+  &--text {
+    margin: 40px 0;
+
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0pt;
+    color: #181515;
+    opacity: 1;
   }
 }
 .how-it-works {
@@ -60,7 +114,7 @@
   }
 
   .card {
-    width: 300px;
+    width: 260px;
     text-align: center;
     min-width: 0;
     word-wrap: break-word;
@@ -72,21 +126,32 @@
     margin: 60px 0;
     &--title {
       color: white;
-      background: #0e6ebe;
+      background: #3772ff 0% 0% no-repeat padding-box;
       width: 100px;
       border-radius: 55px;
       height: 99px;
-      margin: -32px 30% 10px;
-      font-size: 70px;
+      margin: -32px 30% 41px;
+      font-size: 76px;
     }
     &--subtitle {
+      text-align: center;
+      font-weight: 700;
+      font-size: 20px;
+      color: #3772ff;
+    }
+    &--text {
+      text-align: center;
+      font-weight: SemiBold;
+      font-size: 15px;
+      letter-spacing: 0px;
+      color: #181515;
     }
   }
 }
 .who-we-help {
   &--title {
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     color: $BASE-BLUE;
     margin: 20px 0 40px 0;
   }
@@ -95,25 +160,72 @@
     color: #181515;
   }
   &--img {
-    width: 350px;
+    width: 500px;
+  }
+  &--separator {
+    &__1 {
+      width: 94%;
+      height: 263px;
+      background: url("/assets/separator1.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &__2 {
+      width: 94%;
+      height: 263px;
+      background: url("/assets/separator2.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 
 .contact {
+  text-align: center;
+  padding: 40px 0;
   &--title {
-    text-align: center;
     font-family: Montserrat;
     letter-spacing: 0px;
     color: $BASE-BLUE;
+  }
+  &--subtitle {
+    font-family: Montserrat;
+    letter-spacing: 0px;
+    color: #181515;
+    margin: 30px 0;
+  }
+}
+@media (max-width: $breakpoint-tablet) {
+  .who-we-help {
+    &--img {
+      width: 250px;
+    }
+    &--separator {
+      &__1 {
+        display: none;
+      }
+      &__2 {
+        display: none;
+      }
+    }
+  }
+  .footer{
+    &--social{
+      display: none;
+    }
   }
 }
 .footer {
   margin: 30px 0 0 0;
   background: transparent linear-gradient(108deg, #0b6ebe 0%, #3772ff 100%) 0%
     0% no-repeat padding-box;
-  height: 80px;
+  height: 100px;
   color: white;
-  li {
+  position: relative;
+  margin-top: 150px;
+  clear: both;
+  padding-top: 20px;
+  li, a {
     margin: 10px 20px;
     list-style-type: none;
     display: inline-block;

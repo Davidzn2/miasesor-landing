@@ -3,23 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
+    <title>Miasesor.io | Asesorias para todos</title>
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
+    /> -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css-styles/styles.css" />
   </head>
   <body>
+
+      
     <header class="header">
       <div class="container">
         <img src="assets/miasesor-logo.png" alt="" class="header--logo" />
-        <ul class="header--menu">
-          <li class="header--menu__element">Asesores</li>
-          <li class="header--menu__element">Contacto</li>
-          <li class="header--menu__element">
-            <button class="button button--blue">Agenda una asesoria</button>
-          </li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class=" header--menu " id="navbarText">
+          <!-- <li class="nav-item header--menu__element"> <a href="#contact">Asesores</a> </li>
+          <li class="nav-item header--menu__element">Contacto</li> -->
+          <li class="nav-item header--menu__element">
+            <a href="https://reserva.miasesor.io/book-now/#start-booking-services">
+              <button class="button button--blue">Agenda una asesoria</button>
+            </a>
+                  </li>
         </ul>
       </div>
     </header>
@@ -30,12 +39,22 @@
         jurídicas.
       </h2>
       <div class="welcome--buttons">
-        <button class="button button--white">Contabilidad</button>
-        <button class="button button--white">Finanzas</button>
-        <button class="button button--white">Marketing</button>
+        <a href="https://reserva.miasesor.io/book-now/#start-booking-services">
+          <button class="button welcome--button button--white">Contabilidad</button>
+        </a>
+        <a href="https://reserva.miasesor.io/book-now/#start-booking-services">
+          <button class="button welcome--button button--white">Finanzas</button>
+        </a>
+        <a href="https://reserva.miasesor.io/book-now/#start-booking-services">
+          <button class="button welcome--button button--white">Marketing</button>
+        </a>
+    
       </div>
       <div class="welcome--buttons--down">
-        <button class="button button--white">Más Asesórias</button>
+        <a href="https://reserva.miasesor.io/book-now/#start-booking-services">
+          <button class="button welcome--button button--white">Más Asesórias</button>
+        </a>
+    
       </div>
     </section>
     <section class="not-alone">
@@ -46,36 +65,54 @@
         Somos una red de asesores expertos en diferentes áreas profesionales,
         con el fin de contribuir a la solución de tus necesidades empresariales
       </p>
-      <button class="button button--blue">Agenda una Asesoría</button>
-    </section>
+      <a href="https://reserva.miasesor.io/book-now/#start-booking-services">
+        <button class="button button--blue">Agenda una asesoria</button>
+      </a>
+      </section>
     <section class="how-it-works">
       <h2 class="how-it-works--title">
         ¿Cómo Funciona?
       </h2>
       <div class="how-it-works--cards">
-        <div class="card">
+        <div class="container card">
           <h2 class="card--title">1</h2>
           <h3 class="card--subtitle">¿En qué te Ayudamos?</h3>
-          <p class="text">
+          <h4 class="card--text">
             Elige el área profesional en la que necesitas ayuda
-          </p>
+          </h4>
         </div>
-        <div class="card">
+        <div class="container card">
           <h2 class="card--title">2</h2>
           <h3 class="card--subtitle">Elige tu Horario</h3>
-          <p class="text">Selecciona la hora y el día que más te convenga</p>
+          <h4 class="card--text">Selecciona la hora y el día que más te convenga</h4>
         </div>
-        <div class="card">
+        <div class="container card">
           <h2 class="card--title">3</h2>
           <h3 class="card--subtitle">Datos y Pago</h3>
-          <p class="text">Déjanos tus datos y elige tu método de pago</p>
+          <h4 class="card--text">Déjanos tus datos y elige tu método de pago</h4>
         </div>
-        <div class="card">
+        <div class="container card">
           <h2 class="card--title">4</h2>
           <h3 class="card--subtitle">Recibe tu Confirmación</h3>
-          <p class="text">En minutos tu asesor se pondrá en contacto contigo</p>
+          <h4 class="card--text">En minutos tu asesor se pondrá en contacto contigo</h4>
         </div>
       </div>
+    </section>
+    <section class="container pricing">
+      <h1 class="pricing--title">¿Cuánto cuesta una asesoría online?</h1> 
+      <div class=" card">
+      <h3 class="card--subtitle">Primera asesoría de 50 minutes</h3>
+      <h4 class="card--text">
+        $350 mxn
+      </h4>
+    </div>
+    <p class="pricing--text">
+      No te preocupes más por encontrar un asesor de confianza, nosotros te lo garantizamos
+    </p>
+    <a href="https://reserva.miasesor.io/book-now/#start-booking-services">
+      <button class="button button--blue">Agenda una asesoria</button>
+    </a>
+
     </section>
     <section class="container who-we-help">
       <h2 class="who-we-help--title">¿A Quién Asesoramos?</h2>
@@ -83,21 +120,21 @@
         <h3 class="col-12 who-we-help--subtitle">
           Profesionistas Independientes
         </h3>
-        <p class="col-6 who-we-help--text">
+        <p class="col-sm-12 col-md-6 who-we-help--text">
           Sabemos que sacar adelante y formalizar tu negocio no es fácil, es por
           eso que te ofrecemos las asesorías más accesibles del mercado para que
           puedas crecer y formalizar tus servicios.
-        </p>
-        <div class="col-6">
+        </h4>
+        <div class="col-sm-12 col-md-6">
           <img src="assets/accesible.png" alt="" class="who-we-help--img" />
 
         </div>
       </div>
-      <img src="" alt="" class="who-we-help--separator" />
+      <div class="who-we-help--separator__2"></div>
       <div class="row who-we-help--section">
         <h3 class="col-12 who-we-help--subtitle right">Para Emprendedores</h3>
 
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6">
           <img
           src="assets/entrepreneur.png"
           alt=""
@@ -105,110 +142,66 @@
         />
         </div>
     
-        <p class="col-6 who-we-help--text right">
+        <p class="col-sm-12 col-md-6 who-we-help--text right">
           Si estas emprendiendo tu idea de negocio siempre es importante
           asesorarte en las áreas que serán importantes para tu negocio.
         </p>
       </div>
-      <img src="" alt="" class="who-we-help--separator" />
+      <div class="who-we-help--separator__1"></div>
       <div class="row who-we-help--section">
         <h3 class="col-12 who-we-help--subtitle">
           Pequeñas y Medianas Empresas
         </h3>
-        <p class="col-6 who-we-help--text">
+        <p class="col-sm-12 col-md-6 who-we-help--text">
           A lo largo de la vida de tu negocio es indispensable contar con ayuda
           profesional para aprovechar al máximo tus áreas de oportunidad.
         </p>
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6">
           <img src="assets/pymes.png" alt="" class="who-we-help--img" />
 
         </div>
       </div>
     </section>
-    <section class="container contact">
+    <section class="container contact" id="contact">
       <h2 class="contact--title">
-        ¿Tienes Dudas? Contáctanos
+        ¿Te gustaría ser asesor?
       </h2>
-      <form
-        id="contact-form"
-        name="contact-form"
-        action="mail.php"
-        method="POST"
-      >
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-md-6">
-            <div class="md-form mb-0">
-              <input type="text" id="name" name="name" class="form-control" placeholder="Nombre"/>
-              
-            </div>
-          </div>
-          <!--Grid column-->
+      <h3 class="contact--subtitle">
+        ¡Únete a miasesor!
+      </h3>
+      <a href="https://airtable.com/shrGoov2pdobPYZvT">
+        <button class="button button--blue">Aplica aquí</button>
+      </a>
 
-          <!--Grid column-->
-          <div class="col-md-6">
-            <div class="md-form mb-0">
-              <input type="text" id="email" name="email" class="form-control" placeholder="Email" />
-          
-            </div>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-
-        <!--Grid row-->
-        <div class="row">
-          <div class="col-md-12">
-            <div class="md-form mb-0">
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                class="form-control"
-                placeholder="Asunto"
-              />
-            </div>
-          </div>
-        </div>
-        <!--Grid row-->
-
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-md-12">
-            <div class="md-form">
-              <textarea
-                type="text"
-                id="message"
-                name="message"
-                rows="2"
-                class="form-control md-textarea"
-                placeholder="Mensaje"
-              ></textarea>
-            </div>
-          </div>
-        </div>
-        <!--Grid row-->
-      </form>
     </section>
     <footer class="footer">
       <ul class="footer--menu">
         <li class="footer--menu__element">
-          Aviso de Privacidad
+          <a href="#">
+            Aviso de Privacidad
+          </a>
         </li>
         <li class="footer--menu__element">
-          Términos y Condiciones
-        </li>
-        <li class="footer--menu__element">
-          ¿Quieres ser asesor?
+          <a href="#">
+            Términos y Condiciones
+          </a>
         </li>
       </ul>
       <ul class="footer--social">
-        <li><img src="assets/fb.png" alt="" /></li>
-        <li><img src="assets/ig.png" alt="" /></li>
-        <li><img src="assets/linkedin.png" alt="" /></li>
+        <li> 
+          <a href="https://facebook.com/miasesor.io">
+          <img src="assets/fb.png" alt="" />
+        </a>
+      </li>
+        <li>
+          <a href="https://www.instagram.com/miasesor.io"><img src="assets/ig.png" alt="" /></a></li>
+        <li>
+          <a href="https://www.linkedin.com/company/miasesor-io/"><img src="assets/linkedin.png" alt="" /></a></li>
       </ul>
     </footer>
   </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
 </html>
