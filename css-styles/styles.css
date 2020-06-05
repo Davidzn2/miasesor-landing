@@ -16,6 +16,10 @@
   font-weight: Bold;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .header {
   background: transparent linear-gradient(103deg, #3772ff 0%, #1c3980 100%) 0% 0% no-repeat padding-box;
   height: 50px;
